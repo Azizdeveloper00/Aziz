@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohammed Nihal Aziz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1em 0;
+            text-align: center;
+            position: relative;
+        }
+        .profile-icon {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: url('your-profile-photo-url.jpg') no-repeat center center;
+            background-size: cover;
+        }
+        nav {
+            display: none;
+            flex-direction: column;
+            position: absolute;
+            top: 100%;
+            right: 0;
+            background-color: #333;
+            width: 200px;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+            display: block;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .container {
+            padding: 20px;
+        }
+        .section {
+            margin: 20px 0;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .feedback-section, .payment-section {
+            margin: 20px 0;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .menu-icon {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            cursor: pointer;
+        }
+        .menu-icon div {
+            width: 25px;
+            height: 3px;
+            background-color: white;
+            margin: 5px 0;
+        }
+        .highlight {
+            font-weight: bold;
+            color: #4CAF50;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="profile-icon"></div>
+        <h1>Part Time Job</h1>
+        <h2 class="highlight">MOHAMMED NIHAL AZIZ</h2>
+        <p>Photo Editor | Video Editor | Gamer</p>
+        <div class="menu-icon" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <nav id="nav-menu">
+            <a href="#about">About Me</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <div class="container">
+        <div id="about" class="section">
+            <h2>About Me</h2>
+            <p>Hello! My name is <span class="highlight">MOHAMMED NIHAL AZIZ</span>. I am currently studying B.Tech and have a passion for photo and video editing. In my free time, I love to play Free Fire.</p>
+            <p>Email: nihalaziz69@gmail.com</p>
+            <p>Location: Telangana, India</p>
+        </div>
+        <div id="portfolio" class="section">
+            <h2>Portfolio</h2>
+            <p>Here you can find some of my best works in photo and video editing.</p>
+            <!-- Add your portfolio items here -->
+        </div>
+        <div id="contact" class="section">
+            <h2>Contact</h2>
+            <p>You can reach me at:</p>
+            <p>Phone: 8328083632</p>
+            <p>Email: nihalaziz69@gmail.com</p>
+        </div>
+        <div class="feedback-section">
+            <h2>Feedback</h2>
+            <form>
+                <label for="feedback">Leave your feedback:</label><br>
+                <textarea id="feedback" name="feedback" rows="4" cols="50"></textarea><br><br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+        <div class="payment-section">
+            <h2>Support Me</h2>
+            <p>You can support me through UPI:</p>
+            <ul>
+                <li>PhonePe: <a href="upi://pay?pa=8328083632@axl&pn=MOHAMMED+NIHAL+AZIZ" target="_blank">Pay via PhonePe</a></li>
+                <li>GPay: <a href="upi://pay?pa=8328083632@axl&pn=MOHAMMED+NIHAL+AZIZ" target="_blank">Pay via GPay</a></li>
+                <li>Paytm: <a href="upi://pay?pa=8328083632@axl&pn=MOHAMMED+NIHAL+AZIZ" target="_blank">Pay via Paytm</a></li>
+            </ul>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 MOHAMMED NIHAL AZIZ</p>
+    </footer>
+    <script>
+        function toggleMenu() {
+            const navMenu = document.getElementById('nav-menu');
+            if (navMenu.style.display === 'flex') {
+                navMenu.style.display = 'none';
+            } else {
+                navMenu.style.display = 'flex';
+            }
+        }
+    </script>
+</body>
+</html>
